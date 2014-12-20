@@ -1,0 +1,38 @@
+{
+    "name": "indigophp/auth",
+    "type": "fuelphp-component",
+    "description": "IndigoPHP Auth component",
+    "license": "MIT",
+    "keywords": ["indigo", "auth", "fuelphp"],
+    "homepage": "https://indigophp.com",
+    "authors": [
+        {
+            "name": "Tamás Barta",
+            "email": "barta.tamas.d@gmail.com"
+        },
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "composer/installers": "dev-master"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "henrikbjorn/phpspec-code-coverage" : "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Indigo\\Auth\\": "classes/",
+            "Indigo\\Admin\\": "admin/classes/",
+            "Fuel\\Auth\\": "lib/Fuel/Auth/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
